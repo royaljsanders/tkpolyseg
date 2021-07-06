@@ -26,8 +26,8 @@ class FeetToMeters:
         if sys.platform.startswith('win32'):
             # run main_seg_win.py
             print("win!")
-            subprocess.run(["conda", "activate", "snapshot"])
-            subprocess.run(["python", "C:/Polygon_Segmentation_9_Classes/main_seg_win.py", self.input.get(), self.output.get(), self.split_value.get()])
+            #subprocess.run(["conda", "activate", "snapshot"])
+            subprocess.run(["C:/ProgramData/Anaconda3/envs/snapshot/python.exe", "C:/Polygon_Segmentation_9_Classes/main_seg_win.py", self.input.get(), self.output.get(), self.split_value.get()])
         elif sys.platform.startswith('linux'):
             # run main_seg_linux.py
             print("lin!")
